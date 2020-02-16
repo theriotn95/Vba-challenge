@@ -1,12 +1,4 @@
-VERSION 1.0 CLASS
-BEGIN
-  MultiUse = -1  'True
-END
-Attribute VB_Name = "Sheet3"
-Attribute VB_GlobalNameSpace = False
-Attribute VB_Creatable = False
-Attribute VB_PredeclaredId = True
-Attribute VB_Exposed = True
+
 Sub Stock_Data_2014__2016()
 
 Dim ws As Worksheet
@@ -25,15 +17,14 @@ For Each ws In Worksheets
     Dim Summary_Table_Row As Integer
     Summary_Table_Row = 2
     
-    'set variables for opening values'
+  'set variables for opening  and closing values'
     Dim openPrice As Double
     Dim openprice_ind As Double
     Dim closePrice As Double
     Dim yearly_change As Double
     Dim ticker_volume As Double
     Dim percent_change As Double
-    
-    'set counters'
+   
     openprice_ind = 2
     ticker_volume = 0
     
